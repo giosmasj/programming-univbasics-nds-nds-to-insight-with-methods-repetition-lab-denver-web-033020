@@ -28,8 +28,8 @@ def list_of_directors(source)
   names = []
   index = 0
   
-  while index < list_of_directors(source).length do
-    names << source[index][:name]
+  while index < source.length do
+    names << list_of_directors(source[index][:name])
     index += 1
   end
   puts names

@@ -56,7 +56,7 @@ def total_gross(source)
   
   while index < director_names.length do
     director_names = director_names[index]
-    total += director_earnings_hash[director_names]
+    total += directors_totals(source)
     index += 1
   end
   
